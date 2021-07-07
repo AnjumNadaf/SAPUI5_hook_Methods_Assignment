@@ -1,0 +1,51 @@
+<mvc:View
+    controllerName="sapui5app.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="View 1">
+					<content>
+					<Text text="Hello"/>
+					<Button text="onNext" press="onView2"/>
+					<Table id="table01" items="{/Products}" mode="SingleSelectMaster" selectionChange="selectRowdat">
+				
+					<columns>
+				    	<Column>
+					      <Label text="Country"/>
+					    </Column>
+					    <Column>
+					      <Label text="Profit"/>
+					    </Column>
+					    <Column>
+					      <Label text="Target"/>
+					    </Column>
+					    <Column>
+					      <Label text="Revenue"/>
+					    </Column>
+					    <Column>
+					      <Label text="Revenue2"/>
+					     </Column>
+				    </columns>
+					<items>
+					   <ColumnListItem>
+					      <cells>
+					         <Input value="{Country}" />
+					         <Input value="{Profit}" />
+					         <Input value="{Forcast}" />
+					         <Input value="{Target}" />
+					         <Input value="{Revenue}" />
+					         <Input value="{Revenue2}"/>
+					    </cells>
+					   </ColumnListItem>
+					</items>
+					</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

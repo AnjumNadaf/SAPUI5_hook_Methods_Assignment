@@ -1,0 +1,19 @@
+<mvc:View
+    controllerName="sapui5app.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell>
+		<App>
+			<pages>
+				<Page title="View 2">
+					<content>
+					<Text text="Hello Navigate to Second View"/>
+					<Button text="onNext" press="OnView1"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
